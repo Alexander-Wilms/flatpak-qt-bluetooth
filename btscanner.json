@@ -1,5 +1,5 @@
 {
-	"app-id": "org.github.btscanner",
+	"app-id": "com.github.btscanner",
 	"runtime": "org.kde.Platform",
 	"runtime-version": "5.9",
 	"sdk": "org.kde.Sdk",
@@ -23,9 +23,9 @@
 				make && \\
 				make install && \\
 				mkdir -p /app/share/icons/hicolor/48x48/apps && \\
-				cp /usr/share/icons/breeze/apps/48/accessories-calculator.svg /app/share/icons/hicolor/48x48/apps/ && \\
+				cp /usr/share/icons/breeze/apps/48/accessories-calculator.svg /app/share/icons/hicolor/48x48/apps/com.github.btscanner.svg && \\
 				mkdir -p /app/share/appdata && \\
-				cp /usr/share/appdata/org.kde.Sdk.appdata.xml /app/share/appdata/"
+				cp /usr/share/appdata/org.kde.Sdk.appdata.xml /app/share/appdata/com.github.btscanner.appdata.xml"
 			]
 		}
     ]
