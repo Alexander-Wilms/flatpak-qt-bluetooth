@@ -7,7 +7,8 @@
 	"finish-args":[
 		"--socket=x11",
 		"--share=ipc",
-		"--device=all"
+		"--device=all",
+		"--talk-name=org.bluez"
 	],
 	"modules":[
 	{
