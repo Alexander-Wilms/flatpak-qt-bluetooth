@@ -51,6 +51,20 @@
     }
   ]
 },
+		{
+			"name": "libical",
+			"cleanup": [ "/lib/cmake"],
+			"buildsystem": "cmake",
+			"config-opts": [ "-DCMAKE_INSTALL_LIBDIR:PATH=/app/lib",
+							  "-DBUILD_SHARED_LIBS:BOOL=ON" ],
+			"sources": [
+				{
+					"type": "archive",
+					"url": "https://github.com/libical/libical/releases/download/v1.0.1/libical-1.0.1.tar.gz",
+					"sha256": "089ce3c42d97fbd7a5d4b3c70adbdd82115dd306349c1f5c46a8fb3f8c949592"
+				}
+			]
+		},
 	{
 			"name": "bluez",
 			"config-opts": [ "--disable-datafiles", "--disable-systemd", "--enable-library", "--prefix=/app", "--sysconfdir=/app/etc" ],
