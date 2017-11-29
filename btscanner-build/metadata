@@ -1,0 +1,4 @@
+[Application]
+name=com.github.btscanner
+runtime=org.kde.Platform/x86_64/5.9
+sdk=org.kde.Sdk/x86_64/5.9
