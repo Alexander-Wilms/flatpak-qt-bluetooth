@@ -6,6 +6,7 @@
 	"command": "btscanner",
 	"finish-args":[
 		"--socket=x11",
+		"--share=network",
 		"--share=ipc",
 		"--device=all",
 		"--talk-name=org.bluez",
