@@ -9,14 +9,7 @@
 		"--share=network",
 		"--share=ipc",
 		"--device=all",
-		"--talk-name=org.bluez",
-		"--talk-name=org.bluez.AgentManager1",
-		"--talk-name=org.bluez.ProfileManager1",
-		"--talk-name=org.freedesktop.DBus.Introspectable",
-		"--talk-name=org.bluez.Adapter1",
-		"--talk-name=org.bluez.GattManager1",
-		"--talk-name=org.bluez.Media1",
-		"--talk-name=org.bluez.NetworkServer1"
+		"--system-talk-name=org.bluez"
 	],
 	"modules":[
 	{
