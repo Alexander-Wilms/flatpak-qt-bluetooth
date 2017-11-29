@@ -16,5 +16,5 @@ FORMS = \
     device.ui \
     service.ui
 
-target.path = /app/bin/btscanner
+target.path = /app/btscanner
 INSTALLS += target
