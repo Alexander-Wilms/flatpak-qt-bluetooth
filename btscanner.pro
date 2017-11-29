@@ -16,5 +16,5 @@ FORMS = \
     device.ui \
     service.ui
 
-target.path = $$[QT_INSTALL_EXAMPLES]/bluetooth/btscanner
+target.path = /app/bin/btscanner
 INSTALLS += target

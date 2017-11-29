@@ -1,0 +1,32 @@
+{
+	"app-id": "org.github.btscanner",
+	"runtime": "org.kde.Platform",
+	"runtime-version": "5.9",
+	"sdk": "org.kde.Sdk",
+	"command": "btscanner",
+	"finish-args":[
+		"--socket=x11",
+		"--device=all"
+	],
+	"modules":[
+		{
+			"name":"btscanner",
+			"buildsystem": "simple",
+			"sources":[
+				{
+					"type":"git",
+					"url":"https://github.com/Alexander-Wilms/flatpak-qt-bluetooth"
+				}
+			],
+			"build-commands": [
+				"qmake PREFIX=/app btscanner.pro && \\
+				make && \\
+				make install && \\
+				mkdir -p /app/share/icons/hicolor/48x48/apps && \\
+				cp /usr/share/icons/breeze/apps/48/accessories-calculator.svg /app/share/icons/hicolor/48x48/apps/ && \\
+				mkdir -p /app/share/appdata && \\
+				cp /usr/share/appdata/org.kde.Sdk.appdata.xml /app/share/appdata/"
+			]
+		}
+    ]
+}
