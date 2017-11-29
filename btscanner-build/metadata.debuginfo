@@ -1,5 +1,0 @@
-[Runtime]
-name=com.github.btscanner.Debug
-
-[ExtensionOf]
-ref=app/com.github.btscanner/x86_64/master
